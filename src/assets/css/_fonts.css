@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Righteous';
+    src: local('Righteous'), local('Righteous-Regular'),
+        url('../fonts/Righteous-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Guntur';
+    src: local('Hind Guntur Regular'), local('HindGuntur-Regular'),
+        url('../fonts/HindGuntur-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

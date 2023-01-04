@@ -1,0 +1,98 @@
+{
+  "name": "sportizer-remote",
+  "version": "1.0.0",
+  "description": "WebApp Remote side",
+  "main": "index.js",
+  "scripts": {
+    "dev": "snowpack dev --polyfill-node",
+    "test": "jest",
+    "build": "snowpack build --polyfill-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/sportizer/sportizer-remote.git"
+  },
+  "author": "Enzo Candotti <enzo.candotti16@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/sportizer/sportizer-remote/issues"
+  },
+  "homepage": "http://localhost:3001",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^5.3.0",
+    "socket.io-client": "^4.3.2",
+    "tailwindcss": "^2.2.15"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@snowpack/plugin-dotenv": "^2.2.0",
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "@testing-library/dom": "^8.6.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@types/jest": "^27.0.2",
+    "autoprefixer": "^10.3.5",
+    "babel-jest": "^27.2.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.0",
+    "jest": "^27.2.2",
+    "jwt-decode": "^3.1.2",
+    "postcss": "^8.3.8",
+    "postcss-cli": "^9.0.0",
+    "prettier": "^2.4.1",
+    "prop-types": "^15.7.2",
+    "react-is": "^17.0.2",
+    "snowpack": "^3.8.8",
+    "tailwindcss": "^2.2.15"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": []
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "globals": {
+      "__SNOWPACK_ENV__": "readonly"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "tabWidth": 2,
+    "singleQuote": true
+  }
+}
